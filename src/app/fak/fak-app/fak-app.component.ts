@@ -1,30 +1,25 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {Web3Service} from '../../util/web3.service';
+import {Fak} from '../../model/fak.model'
 import {MAT_DIALOG_DATA, MatDialog, MatSnackBar} from '@angular/material';
-import {FormControl} from '@angular/forms';
+
 
 
 declare let require: any;
 const fakblock_artifacts = require('../../../../build/contracts/FakBlock.json');
 
+
 @Component({
-  selector: 'app-fak-sender',
-  templateUrl: './fak-sender.component.html',
-  styleUrls: ['./fak-sender.component.css']
+  selector: 'fak-app',
+  templateUrl: './fak-app.component.html',
+  styleUrls: ['./fak-app.component.css']
 })
-export class FakSenderComponent implements OnInit {
-  accounts: string[];
-  account: string;
+export class FakAppComponent implements OnInit {
   FakBlock: any;
   loading: boolean;
 
-  model = {
-    issuerId: '',
-    payerId: '',
-    invoiceNo: '',
-    date: new FormControl(new Date()),
-    amount: 0.0,
-  };
+  model_add = new Fak();
+  model_check = new Fak();
 
   status = '';
 
@@ -39,44 +34,27 @@ export class FakSenderComponent implements OnInit {
       .then((FakBlockAbstraction) => {
         this.FakBlock = FakBlockAbstraction;
       });
-
-    this.watchAccount();
   }
-
-  watchAccount() {
-    this.web3Service.accountsObservable.subscribe((accounts) => {
-      this.accounts = accounts;
-      if(accounts.length > 0) {
-        this.account = accounts[0];
-      }
-    });
-  }
-
 
   setStatus(status) {
     this.matSnackBar.open(status, null, {duration: 3000});
   }
 
-  async checkInvoice() {
+  async checkInvoice(fak: Fak) {
     if (!this.FakBlock) {
       this.setStatus('FakBlock is not loaded, unable to send transaction');
       return;
     }
-
-    var h = this.web3Service.hash(this.model.issuerId+'|'
-      +this.model.payerId + '|'
-      +this.model.invoiceNo + '|'
-      +this.model.date + '|'
-      +this.model.amount
-    );
-    console.log('Sending:' + h);
+    let account = await this.web3Service.getAccount();
+    var h = this.web3Service.hash(fak.asString());
+    
     this.setStatus('Initiating transaction... (please wait)');
     try {
       const deployedMetaCoin = await this.FakBlock.deployed();
       const transaction = await deployedMetaCoin.getOwner(h);
       console.log([transaction]);
       if (this.web3Service.isAddress(transaction) && transaction !== "0x0000000000000000000000000000000000000000") {
-        const dialogRef = this.dialog.open(ConfirmationDialog, {data: { ok: true, text: `invoice(${h}) owned by: ${transaction} ${transaction == this.account? "(You)": ""}` }});
+        const dialogRef = this.dialog.open(ConfirmationDialog, {data: { ok: true, text: `invoice(${h}) owned by: ${transaction} ${transaction == account? "(You)": ""}` }});
       } else {
         const dialogRef = this.dialog.open(ConfirmationDialog, {data: { ok: true , text: `no invoice (${h})`}});
       }
@@ -86,28 +64,44 @@ export class FakSenderComponent implements OnInit {
     }
   }
 
-  async sendInvoice() {
+  private async encryptFak(fak: Fak) {
+    return await this.web3Service.encrypt(fak.asJsonString());
+  }
+
+  private async decryptFak(msg: string) {
+    let j = await this.web3Service.decrypt(msg);
+    let fak = new Fak();
+    fak.init(j);
+    return fak;
+  }
+
+
+  async sendInvoice(fak: Fak) {
     if (!this.FakBlock) {
       this.setStatus('FakBlock is not loaded, unable to send transaction');
       return;
     }
-    this.loading = true;
-    var h = this.web3Service.hash(this.model.issuerId+'|'
-      +this.model.payerId + '|'
-      +this.model.invoiceNo + '|'
-      +this.model.date + '|'
-      +this.model.amount
-    );
-    console.log('Sending:' + h);
+    let account = await this.web3Service.getAccount();
+    if (!this.web3Service.isAddress(account)) {
+      this.setStatus('Select yours account');
+      return;
+    }
 
-  try {
+    this.loading = true;
+    var h = this.web3Service.hash(fak.asString());
+    console.log('Sending hash:' + h);
+    var encrypted = await this.encryptFak(fak);
+    var decrypted = await this.decryptFak(encrypted);
+    console.log('Encrypted fak:' + encrypted + decrypted)
+
+    try {
       const deployedMetaCoin = await this.FakBlock.deployed();
 
       var transaction = await deployedMetaCoin.getOwner(h);
       if (this.web3Service.isAddress(transaction) && transaction !== "0x0000000000000000000000000000000000000000") {
         const dialogRef = this.dialog.open(ConfirmationDialog, {data: { ok: false, text: `invoice(${h}) owned by: ${transaction}` }});
       } else {
-        transaction = await deployedMetaCoin.createFack(h, {from: this.accounts[0], gas: 100000});
+        transaction = await deployedMetaCoin.createFack(h, '021', {from: account, gas: 1000000});
         if (transaction) {
           const dialogRef = this.dialog.open(ConfirmationDialog, {data: { ok: true, text: "success" }});
         } else {

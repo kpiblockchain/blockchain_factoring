@@ -1,0 +1,27 @@
+<p>
+    <mat-form-field>
+        <input type="text" matInput placeholder="NIP faktoranta"  [(ngModel)]="model.issuerId"/>
+    </mat-form-field>
+</p>
+<p>
+    <mat-form-field>
+        <input type="text" matInput placeholder="NIP płatnika"  [(ngModel)]="model.payerId"/>
+    </mat-form-field>
+</p>
+<p>
+    <mat-form-field>
+        <input type="text" matInput placeholder="Numer faktury"  [(ngModel)]="model.invoiceNo"/>
+    </mat-form-field>
+</p>
+<p>
+    <mat-form-field>
+        <input matInput [matDatepicker]="picker1" placeholder="Data wystawienia faktury" [(ngModel)]="model.date"/>
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+</p>
+<p>
+    <mat-form-field>
+        <input type="text" matInput placeholder="Wartość brutto"  [(ngModel)]="model.amount"/>
+    </mat-form-field>
+</p>

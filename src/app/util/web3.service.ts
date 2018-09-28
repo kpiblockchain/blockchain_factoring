@@ -1,8 +1,15 @@
 import {Injectable} from '@angular/core';
 import * as contract from 'truffle-contract';
+import {AES, enc} from 'crypto-js';
 import {Subject} from 'rxjs/Rx';
+import {Buffer} from 'buffer';
+
+
+
 declare let require: any;
+declare let global: any;
 const Web3 = require('web3');
+
 
 
 declare let window: any;
@@ -11,6 +18,8 @@ declare let window: any;
 export class Web3Service {
   private web3: any;
   private accounts: string[];
+  private keySeed: string;
+  private symKey: string;
   public ready = false;
   public MetaCoin: any;
   public accountsObservable = new Subject<string[]>();
@@ -19,6 +28,8 @@ export class Web3Service {
     window.addEventListener('load', (event) => {
       this.bootstrapWeb3();
     });
+    let msg = new Buffer("off-chain data encription key");
+    this.keySeed = "0x" + msg.toString('hex');
   }
 
   public bootstrapWeb3() {
@@ -34,12 +45,41 @@ export class Web3Service {
       // fallback - use your fallback strategy (local node / hosted node + in-dapp id mgmt / fail)
       this.web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
     }
-
+    
     setInterval(() => this.refreshAccounts(), 1000);
   }
 
   public sign(data, cb) {
     this.web3.eth.sign(this.accounts[0], data, cb);
+  }
+
+  public async generateKey(): Promise<string> {
+    let self = this;
+    return new Promise<string>((resolve, reject) => {
+      if(self.symKey != null) {
+        resolve(self.symKey);
+        return;
+      }
+      this.web3.personal.sign(this.keySeed, this.web3.eth.accounts[0], "0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef", function(error, result) {
+        self.symKey = result.slice(2, 66);
+        console.log("symKey:" + self.symKey);
+        resolve(self.symKey);
+      });
+    });
+  }
+
+  public async encrypt(data: string): Promise<string> {
+    return this.generateKey().then((key) => {
+      let a = AES.encrypt(data, key); 
+      return a.toString();
+    });
+  }
+
+  public async decrypt(data: string): Promise<string> {
+    return this.generateKey().then((key) => {
+      let a = AES.decrypt(data, key); 
+      return a.toString(enc.Utf8);
+    });
   }
 
   public hash(data) {
@@ -60,6 +100,21 @@ export class Web3Service {
     const contractAbstraction = contract(artifacts);
     contractAbstraction.setProvider(this.web3.currentProvider);
     return contractAbstraction;
+  }
+
+  public async getAccount(): Promise<string> {
+    return new Promise<string>((resolve, reject)=> {
+      this.web3.eth.getAccounts((err, accs) => {
+        if (err != null) {
+          reject(err);
+          return;
+        }
+        if (accs.length === 0) {
+          resolve(null);
+        }
+        resolve(accs[0]);
+      })
+    });
   }
 
   private refreshAccounts() {

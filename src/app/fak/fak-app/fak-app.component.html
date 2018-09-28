@@ -1,0 +1,47 @@
+
+<mat-card>
+  <my-addres></my-addres>
+</mat-card>
+
+
+<div style="padding-top: 10px;" class="container"
+fxLayout="row"
+fxLayout.xs="column"
+fxLayoutAlign="start stretch"
+fxLayoutGap="10px"
+fxLayoutGap.xs="0">
+
+<mat-card style="width: 290px;">  
+  <mat-card-title>Sprawdź fakturę</mat-card-title>
+  <mat-card-content>
+    <fak-form [model]="model_check"></fak-form>
+  </mat-card-content>
+  <mat-card-actions>
+    <div fxFlex>
+        <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+    </div>
+    <button  *ngIf="!loading" mat-raised-button mat-button id="check" (click)="checkInvoice(model_check)">SPRAWDŹ</button>
+  </mat-card-actions>
+</mat-card>
+
+<mat-card style="width: 290px;">  
+  <mat-card-title>Dodaj fakturę</mat-card-title>
+  <mat-card-content>
+    <fak-form [model]="model_add"></fak-form>
+  </mat-card-content>
+  <mat-card-actions>
+      <div fxFlex>
+          <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+      </div>
+    <button *ngIf="!loading" mat-button color="primary" mat-raised-button id="send" (click)="sendInvoice(model_add)">DODAJ</button>
+  </mat-card-actions>
+</mat-card>
+
+<mat-card style="width: 290px;">
+    <mat-card-title>Faktury dodane przez Ciebie</mat-card-title>
+    <mat-card-content>
+      <fak-list></fak-list>
+    </mat-card-content>
+</mat-card>
+
+</div>
