@@ -1,1 +1,34 @@
-<p class="hash" *ngFor="let hash of hashes">Kod faktury: {{hash}}</p>
+
+<mat-list>
+    <mat-list-item *ngFor="let fak of fakList; index as i">
+        <h4 style="padding-bottom: 5px;" mat-line>{{i+1}}. Faktura nr {{fak.invoiceNo}} z dnia {{fak.date|date:'d/M/yy'}}</h4>
+        <h2 mat-line fxLayout="row" >
+            <div class="line">NIP faktoranta:</div>
+            <div fxFlex></div>
+            <div>{{fak.issuerId}}</div>
+        </h2>
+
+        <div mat-line fxLayout="row" >
+            <div class="line">NIP płatnika:</div>
+            <div fxFlex></div>
+            <div>{{fak.payerId}}</div>
+        </div>
+         
+        <div mat-line fxLayout="row" >
+            <div class="line">Wartość brutto:</div>
+            <div fxFlex></div>
+            <div>{{fak.amount}}</div>
+        </div>
+
+        <div mat-line fxLayout="row" style="padding-top: 10px;">
+            <div class="line">Kod faktury:</div>
+            <div fxFlex></div>
+            <div class="hash">{{getHash(fak)}}</div>
+        </div>
+        <div mat-line fxLayout="row">
+            <div fxFlex></div>
+            <button mat-button color="primary" (click)="remove(fak)">usuń</button>    
+        </div>
+
+    </mat-list-item>
+</mat-list>

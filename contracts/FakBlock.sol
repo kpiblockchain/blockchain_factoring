@@ -22,8 +22,8 @@ contract FakBlock {
         return invoices[fakHash].owner;
     }
 
-    function getIpfsHash(bytes32 fakHash) public view returns (address) {
-        return invoices[fakHash].owner;
+    function getIpfsHash(bytes32 fakHash) public view returns (bytes32) {
+        return invoices[fakHash].ipfs_hash;
     }
 
     function getFakByOwner(address owner) public view returns (bytes32[]) {

@@ -1,5 +1,6 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {Web3Service} from '../../util/web3.service';
+import {IpfsService} from '../../util/ipfs.service';
 import {Fak} from '../../model/fak.model'
 import {MAT_DIALOG_DATA, MatDialog, MatSnackBar} from '@angular/material';
 
@@ -23,7 +24,8 @@ export class FakAppComponent implements OnInit {
 
   status = '';
 
-  constructor(private web3Service: Web3Service, private matSnackBar: MatSnackBar, public dialog: MatDialog) {
+  constructor(private web3Service: Web3Service, private ipfsService: IpfsService,
+    private matSnackBar: MatSnackBar, public dialog: MatDialog) {
     console.log('Constructor: ' + web3Service);
   }
 
@@ -68,14 +70,6 @@ export class FakAppComponent implements OnInit {
     return await this.web3Service.encrypt(fak.asJsonString());
   }
 
-  private async decryptFak(msg: string) {
-    let j = await this.web3Service.decrypt(msg);
-    let fak = new Fak();
-    fak.init(j);
-    return fak;
-  }
-
-
   async sendInvoice(fak: Fak) {
     if (!this.FakBlock) {
       this.setStatus('FakBlock is not loaded, unable to send transaction');
@@ -91,8 +85,9 @@ export class FakAppComponent implements OnInit {
     var h = this.web3Service.hash(fak.asString());
     console.log('Sending hash:' + h);
     var encrypted = await this.encryptFak(fak);
-    var decrypted = await this.decryptFak(encrypted);
-    console.log('Encrypted fak:' + encrypted + decrypted)
+    
+    var ipfsHash = await this.ipfsService.save(encrypted);
+    
 
     try {
       const deployedMetaCoin = await this.FakBlock.deployed();
@@ -101,7 +96,7 @@ export class FakAppComponent implements OnInit {
       if (this.web3Service.isAddress(transaction) && transaction !== "0x0000000000000000000000000000000000000000") {
         const dialogRef = this.dialog.open(ConfirmationDialog, {data: { ok: false, text: `invoice(${h}) owned by: ${transaction}` }});
       } else {
-        transaction = await deployedMetaCoin.createFack(h, '021', {from: account, gas: 1000000});
+        transaction = await deployedMetaCoin.createFack(h, ipfsHash, {from: account, gas: 1000000});
         if (transaction) {
           const dialogRef = this.dialog.open(ConfirmationDialog, {data: { ok: true, text: "success" }});
         } else {

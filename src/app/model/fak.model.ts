@@ -22,7 +22,7 @@ export class Fak {
         this.issuerId = o.i;
         this.payerId = o.p;
         this.invoiceNo = o.n;
-        this.date = o.date;
+        this.date = o.d;
         this.amount = o.a;
     }
 

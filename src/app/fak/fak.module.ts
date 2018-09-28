@@ -11,6 +11,7 @@ import {
   MatInputModule, MatNativeDateModule, MatProgressBarModule,
   MatSnackBarModule
 } from '@angular/material';
+import {MatListModule} from '@angular/material/list';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {ConfirmationDialog, FakAppComponent} from './fak-app/fak-app.component';
@@ -33,6 +34,7 @@ import {FakListComponent} from './fak-list/fak-list.component'
     MatDatepickerModule,
     MatNativeDateModule,
     MatProgressBarModule,
+    MatListModule,
     UtilModule,
     FlexLayoutModule
   ],
