@@ -3,6 +3,8 @@ pragma solidity ^0.4.24;
 
 contract FakBlock {
 
+    event Create(address owner, FakState state, bytes32 ipfs_hash);
+
     enum FakState { New, Sold }
 
     struct FakRecord {
@@ -36,6 +38,7 @@ contract FakBlock {
         invoices[fakHash].ipfs_hash = ipfs_hash;
         invoices[fakHash].state = FakState.Sold;
         owners[msg.sender].push(fakHash);
+        emit Create(msg.sender, FakState.Sold, fakHash);
         return true;
     }
 

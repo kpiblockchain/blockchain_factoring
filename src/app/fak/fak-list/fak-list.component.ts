@@ -18,6 +18,7 @@ export class FakListComponent implements OnInit {
   FakBlock: any;
   loading: boolean;
   fakList = [];
+  duplicates = {};
 
   constructor(private web3Service: Web3Service, private ipfsService: IpfsService) {
     console.log('Constructor: ' + web3Service);
@@ -42,11 +43,23 @@ export class FakListComponent implements OnInit {
     for(let i in hashes) {
       let hash = hashes[i];
       let ipfsAdddr = await deployedFakBlock.getIpfsHash(hash);
-      let encEata = await this.ipfsService.load(ipfsAdddr);
-      let data = await this.decryptFak(encEata);
-      this.fakList.push(data);
+      await this.addToList(ipfsAdddr);
     }
-    console.log(this);
+
+    const events = deployedFakBlock.Create({});
+    events.watch((err, result) => {
+      console.log([result]);
+      if(result.args.owner == this.account && ! this.duplicates.hasOwnProperty(result.args.ipfs_hash)) {
+        this.addToList(result.args.ipfs_hash);
+      }
+    });
+  }
+
+  async addToList(ipfsAdddr: string) {
+    let encEata = await this.ipfsService.load(ipfsAdddr);
+    let data = await this.decryptFak(encEata);
+    this.fakList.push(data);
+    this.duplicates[ipfsAdddr] = true;
   }
 
   getHash(fak: Fak) {

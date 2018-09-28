@@ -15,7 +15,7 @@ export class IpfsService {
         return this.ipfs.add(new Buffer(data)).then((multihash) => {
             const decoded = decode(multihash[0].hash);
             console.log({hash: multihash[0].hash, decoded: decoded})
-            return `0x${decoded.slice(2).toString('hex')}`;
+            return `0x${Buffer.from(decoded.slice(2)).toString('hex')}`;
         });
     }
 
