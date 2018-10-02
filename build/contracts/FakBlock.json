@@ -16,7 +16,7 @@
         },
         {
           "indexed": false,
-          "name": "ipfs_hash",
+          "name": "fakHash",
           "type": "bytes32"
         }
       ],
@@ -123,11 +123,11 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b50610431806100206000396000f30060806040526004361061006c5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166309648a9d81146100715780630e19e6a6146100ad5780631aa856e8146100dc578063deb931a21461015a578063eb1fbf151461019b575b600080fd5b34801561007d57600080fd5b506100896004356101c5565b6040518082600181111561009957fe5b60ff16815260200191505060405180910390f35b3480156100b957600080fd5b506100c86004356024356101f2565b604080519115158252519081900360200190f35b3480156100e857600080fd5b5061010a73ffffffffffffffffffffffffffffffffffffffff6004351661034e565b60408051602080825283518183015283519192839290830191858101910280838360005b8381101561014657818101518382015260200161012e565b505050509050019250505060405180910390f35b34801561016657600080fd5b506101726004356103c8565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b3480156101a757600080fd5b506101b36004356103f0565b60408051918252519081900360200190f35b60009081526020819052604090205474010000000000000000000000000000000000000000900460ff1690565b60008281526020819052604081205473ffffffffffffffffffffffffffffffffffffffff161561028357604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152600960248201527f6475706c69636174650000000000000000000000000000000000000000000000604482015290519081900360640190fd5b600083815260208181526040808320805460018083018890557401000000000000000000000000000000000000000074ff0000000000000000000000000000000000000000193373ffffffffffffffffffffffffffffffffffffffff19909416841716179092558085528184528285208054808401825590865294849020909401879055815193845291830191909152818101859052517fb039e3e461a37f1643a891ba59f5cbd4bcd074047da6820e83a9126711144c63916060908290030190a150600192915050565b73ffffffffffffffffffffffffffffffffffffffff81166000908152600160209081526040918290208054835181840281018401909452808452606093928301828280156103bc57602002820191906000526020600020905b815481526001909101906020018083116103a7575b50505050509050919050565b60009081526020819052604090205473ffffffffffffffffffffffffffffffffffffffff1690565b600090815260208190526040902060010154905600a165627a7a7230582069135e547bdd00d9f55aeaea67f3a0edd90b3e9a29829a7804048cfb622604670029",
-  "deployedBytecode": "0x60806040526004361061006c5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166309648a9d81146100715780630e19e6a6146100ad5780631aa856e8146100dc578063deb931a21461015a578063eb1fbf151461019b575b600080fd5b34801561007d57600080fd5b506100896004356101c5565b6040518082600181111561009957fe5b60ff16815260200191505060405180910390f35b3480156100b957600080fd5b506100c86004356024356101f2565b604080519115158252519081900360200190f35b3480156100e857600080fd5b5061010a73ffffffffffffffffffffffffffffffffffffffff6004351661034e565b60408051602080825283518183015283519192839290830191858101910280838360005b8381101561014657818101518382015260200161012e565b505050509050019250505060405180910390f35b34801561016657600080fd5b506101726004356103c8565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b3480156101a757600080fd5b506101b36004356103f0565b60408051918252519081900360200190f35b60009081526020819052604090205474010000000000000000000000000000000000000000900460ff1690565b60008281526020819052604081205473ffffffffffffffffffffffffffffffffffffffff161561028357604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152600960248201527f6475706c69636174650000000000000000000000000000000000000000000000604482015290519081900360640190fd5b600083815260208181526040808320805460018083018890557401000000000000000000000000000000000000000074ff0000000000000000000000000000000000000000193373ffffffffffffffffffffffffffffffffffffffff19909416841716179092558085528184528285208054808401825590865294849020909401879055815193845291830191909152818101859052517fb039e3e461a37f1643a891ba59f5cbd4bcd074047da6820e83a9126711144c63916060908290030190a150600192915050565b73ffffffffffffffffffffffffffffffffffffffff81166000908152600160209081526040918290208054835181840281018401909452808452606093928301828280156103bc57602002820191906000526020600020905b815481526001909101906020018083116103a7575b50505050509050919050565b60009081526020819052604090205473ffffffffffffffffffffffffffffffffffffffff1690565b600090815260208190526040902060010154905600a165627a7a7230582069135e547bdd00d9f55aeaea67f3a0edd90b3e9a29829a7804048cfb622604670029",
-  "sourceMap": "27:1248:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:1248:0;;;;;;;",
-  "deployedSourceMap": "27:1248:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;380:113;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;380:113:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;855:417;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;855:417:0;;;;;;;;;;;;;;;;;;;;;;;;;742:107;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;742:107:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;742:107:0;;;;;;;;;;;;;;;;;499:112;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;499:112:0;;;;;;;;;;;;;;;;;;;;;;;;617:119;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;617:119:0;;;;;;;;;;;;;;;;;;;;;380:113;436:8;463:17;;;;;;;;;;:23;;;;;;;380:113::o;855:417::-;926:4;950:17;;;;;;;;;;:23;:37;:23;:37;942:59;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1011:8;:17;;;;;;;;;;;:36;;-1:-1:-1;1057:27:0;;;:39;;;1106;-1:-1:-1;;1037:10:0;-1:-1:-1;;1011:36:0;;;;;1106:39;;;;;1155:18;;;;;;;;;27:10:-1;;23:18;;;45:23;;1155:32:0;;;;;;;;;;;;;1202:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;1261:4:0;855:417;;;;:::o;742:107::-;829:13;;;;;;;:6;:13;;;;;;;;;822:20;;;;;;;;;;;;;;;;;801:9;;822:20;;;829:13;822:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;742:107;;;:::o;499:112::-;555:7;581:17;;;;;;;;;;:23;;;;499:112::o;617:119::-;676:7;702:17;;;;;;;;;;:27;;;;617:119::o",
-  "source": "pragma solidity ^0.4.24;\n\n\ncontract FakBlock {\n\n    event Create(address owner, FakState state, bytes32 ipfs_hash);\n\n    enum FakState { New, Sold }\n\n    struct FakRecord {\n        address owner;\n        FakState state;\n        bytes32 ipfs_hash; //TODO replace with smaller type\n    }\n\n    mapping (bytes32 => FakRecord) invoices;\n    mapping (address => bytes32[]) owners;\n\n    function getState(bytes32 fakHash) public view returns (FakState) {\n        return invoices[fakHash].state;\n    }\n\n    function getOwner(bytes32 fakHash) public view returns (address) {\n        return invoices[fakHash].owner;\n    }\n\n    function getIpfsHash(bytes32 fakHash) public view returns (bytes32) {\n        return invoices[fakHash].ipfs_hash;\n    }\n\n    function getFakByOwner(address owner) public view returns (bytes32[]) {\n        return owners[owner];\n    }\n\n    function createFack(bytes32 fakHash, bytes32 ipfs_hash) public returns(bool) {\n        require(invoices[fakHash].owner == address(0), \"duplicate\");\n        invoices[fakHash].owner = msg.sender;\n        invoices[fakHash].ipfs_hash = ipfs_hash;\n        invoices[fakHash].state = FakState.Sold;\n        owners[msg.sender].push(fakHash);\n        emit Create(msg.sender, FakState.Sold, fakHash);\n        return true;\n    }\n\n}\n",
+  "bytecode": "0x608060405234801561001057600080fd5b50610431806100206000396000f30060806040526004361061006c5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166309648a9d81146100715780630e19e6a6146100ad5780631aa856e8146100dc578063deb931a21461015a578063eb1fbf151461019b575b600080fd5b34801561007d57600080fd5b506100896004356101c5565b6040518082600181111561009957fe5b60ff16815260200191505060405180910390f35b3480156100b957600080fd5b506100c86004356024356101f2565b604080519115158252519081900360200190f35b3480156100e857600080fd5b5061010a73ffffffffffffffffffffffffffffffffffffffff6004351661034e565b60408051602080825283518183015283519192839290830191858101910280838360005b8381101561014657818101518382015260200161012e565b505050509050019250505060405180910390f35b34801561016657600080fd5b506101726004356103c8565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b3480156101a757600080fd5b506101b36004356103f0565b60408051918252519081900360200190f35b60009081526020819052604090205474010000000000000000000000000000000000000000900460ff1690565b60008281526020819052604081205473ffffffffffffffffffffffffffffffffffffffff161561028357604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152600960248201527f6475706c69636174650000000000000000000000000000000000000000000000604482015290519081900360640190fd5b600083815260208181526040808320805460018083018890557401000000000000000000000000000000000000000074ff0000000000000000000000000000000000000000193373ffffffffffffffffffffffffffffffffffffffff19909416841716179092558085528184528285208054808401825590865294849020909401879055815193845291830191909152818101859052517fb039e3e461a37f1643a891ba59f5cbd4bcd074047da6820e83a9126711144c63916060908290030190a150600192915050565b73ffffffffffffffffffffffffffffffffffffffff81166000908152600160209081526040918290208054835181840281018401909452808452606093928301828280156103bc57602002820191906000526020600020905b815481526001909101906020018083116103a7575b50505050509050919050565b60009081526020819052604090205473ffffffffffffffffffffffffffffffffffffffff1690565b600090815260208190526040902060010154905600a165627a7a723058208fca2d989952e92e1d0ff8f9bdf612ec85217fc307bb3040a2e1ae5fc19fbbec0029",
+  "deployedBytecode": "0x60806040526004361061006c5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166309648a9d81146100715780630e19e6a6146100ad5780631aa856e8146100dc578063deb931a21461015a578063eb1fbf151461019b575b600080fd5b34801561007d57600080fd5b506100896004356101c5565b6040518082600181111561009957fe5b60ff16815260200191505060405180910390f35b3480156100b957600080fd5b506100c86004356024356101f2565b604080519115158252519081900360200190f35b3480156100e857600080fd5b5061010a73ffffffffffffffffffffffffffffffffffffffff6004351661034e565b60408051602080825283518183015283519192839290830191858101910280838360005b8381101561014657818101518382015260200161012e565b505050509050019250505060405180910390f35b34801561016657600080fd5b506101726004356103c8565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b3480156101a757600080fd5b506101b36004356103f0565b60408051918252519081900360200190f35b60009081526020819052604090205474010000000000000000000000000000000000000000900460ff1690565b60008281526020819052604081205473ffffffffffffffffffffffffffffffffffffffff161561028357604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152600960248201527f6475706c69636174650000000000000000000000000000000000000000000000604482015290519081900360640190fd5b600083815260208181526040808320805460018083018890557401000000000000000000000000000000000000000074ff0000000000000000000000000000000000000000193373ffffffffffffffffffffffffffffffffffffffff19909416841716179092558085528184528285208054808401825590865294849020909401879055815193845291830191909152818101859052517fb039e3e461a37f1643a891ba59f5cbd4bcd074047da6820e83a9126711144c63916060908290030190a150600192915050565b73ffffffffffffffffffffffffffffffffffffffff81166000908152600160209081526040918290208054835181840281018401909452808452606093928301828280156103bc57602002820191906000526020600020905b815481526001909101906020018083116103a7575b50505050509050919050565b60009081526020819052604090205473ffffffffffffffffffffffffffffffffffffffff1690565b600090815260208190526040902060010154905600a165627a7a723058208fca2d989952e92e1d0ff8f9bdf612ec85217fc307bb3040a2e1ae5fc19fbbec0029",
+  "sourceMap": "27:1246:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:1246:0;;;;;;;",
+  "deployedSourceMap": "27:1246:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;378:113;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;378:113:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;853:417;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;853:417:0;;;;;;;;;;;;;;;;;;;;;;;;;740:107;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;740:107:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;740:107:0;;;;;;;;;;;;;;;;;497:112;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;497:112:0;;;;;;;;;;;;;;;;;;;;;;;;615:119;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;615:119:0;;;;;;;;;;;;;;;;;;;;;378:113;434:8;461:17;;;;;;;;;;:23;;;;;;;378:113::o;853:417::-;924:4;948:17;;;;;;;;;;:23;:37;:23;:37;940:59;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1009:8;:17;;;;;;;;;;;:36;;-1:-1:-1;1055:27:0;;;:39;;;1104;-1:-1:-1;;1035:10:0;-1:-1:-1;;1009:36:0;;;;;1104:39;;;;;1153:18;;;;;;;;;27:10:-1;;23:18;;;45:23;;1153:32:0;;;;;;;;;;;;;1200:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;1259:4:0;853:417;;;;:::o;740:107::-;827:13;;;;;;;:6;:13;;;;;;;;;820:20;;;;;;;;;;;;;;;;;799:9;;820:20;;;827:13;820:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;740:107;;;:::o;497:112::-;553:7;579:17;;;;;;;;;;:23;;;;497:112::o;615:119::-;674:7;700:17;;;;;;;;;;:27;;;;615:119::o",
+  "source": "pragma solidity ^0.4.24;\n\n\ncontract FakBlock {\n\n    event Create(address owner, FakState state, bytes32 fakHash);\n\n    enum FakState { New, Sold }\n\n    struct FakRecord {\n        address owner;\n        FakState state;\n        bytes32 ipfs_hash; //TODO replace with smaller type\n    }\n\n    mapping (bytes32 => FakRecord) invoices;\n    mapping (address => bytes32[]) owners;\n\n    function getState(bytes32 fakHash) public view returns (FakState) {\n        return invoices[fakHash].state;\n    }\n\n    function getOwner(bytes32 fakHash) public view returns (address) {\n        return invoices[fakHash].owner;\n    }\n\n    function getIpfsHash(bytes32 fakHash) public view returns (bytes32) {\n        return invoices[fakHash].ipfs_hash;\n    }\n\n    function getFakByOwner(address owner) public view returns (bytes32[]) {\n        return owners[owner];\n    }\n\n    function createFack(bytes32 fakHash, bytes32 ipfs_hash) public returns(bool) {\n        require(invoices[fakHash].owner == address(0), \"duplicate\");\n        invoices[fakHash].owner = msg.sender;\n        invoices[fakHash].ipfs_hash = ipfs_hash;\n        invoices[fakHash].state = FakState.Sold;\n        owners[msg.sender].push(fakHash);\n        emit Create(msg.sender, FakState.Sold, fakHash);\n        return true;\n    }\n\n}\n",
   "sourcePath": "/home/msieminski/workspace/trufle-test/ngTruffle/contracts/FakBlock.sol",
   "ast": {
     "absolutePath": "/home/msieminski/workspace/trufle-test/ngTruffle/contracts/FakBlock.sol",
@@ -233,10 +233,10 @@
                   "constant": false,
                   "id": 7,
                   "indexed": false,
-                  "name": "ipfs_hash",
+                  "name": "fakHash",
                   "nodeType": "VariableDeclaration",
                   "scope": 9,
-                  "src": "96:17:0",
+                  "src": "96:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -257,9 +257,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "64:50:0"
+              "src": "64:48:0"
             },
-            "src": "52:63:0"
+            "src": "52:61:0"
           },
           {
             "canonicalName": "FakBlock.FakState",
@@ -269,18 +269,18 @@
                 "id": 10,
                 "name": "New",
                 "nodeType": "EnumValue",
-                "src": "137:3:0"
+                "src": "135:3:0"
               },
               {
                 "id": 11,
                 "name": "Sold",
                 "nodeType": "EnumValue",
-                "src": "142:4:0"
+                "src": "140:4:0"
               }
             ],
             "name": "FakState",
             "nodeType": "EnumDefinition",
-            "src": "121:27:0"
+            "src": "119:27:0"
           },
           {
             "canonicalName": "FakBlock.FakRecord",
@@ -292,7 +292,7 @@
                 "name": "owner",
                 "nodeType": "VariableDeclaration",
                 "scope": 19,
-                "src": "181:13:0",
+                "src": "179:13:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -303,7 +303,7 @@
                   "id": 13,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "181:7:0",
+                  "src": "179:7:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address",
                     "typeString": "address"
@@ -318,7 +318,7 @@
                 "name": "state",
                 "nodeType": "VariableDeclaration",
                 "scope": 19,
-                "src": "204:14:0",
+                "src": "202:14:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -331,7 +331,7 @@
                   "name": "FakState",
                   "nodeType": "UserDefinedTypeName",
                   "referencedDeclaration": 12,
-                  "src": "204:8:0",
+                  "src": "202:8:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_enum$_FakState_$12",
                     "typeString": "enum FakBlock.FakState"
@@ -346,7 +346,7 @@
                 "name": "ipfs_hash",
                 "nodeType": "VariableDeclaration",
                 "scope": 19,
-                "src": "228:17:0",
+                "src": "226:17:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -357,7 +357,7 @@
                   "id": 17,
                   "name": "bytes32",
                   "nodeType": "ElementaryTypeName",
-                  "src": "228:7:0",
+                  "src": "226:7:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes32",
                     "typeString": "bytes32"
@@ -370,7 +370,7 @@
             "name": "FakRecord",
             "nodeType": "StructDefinition",
             "scope": 144,
-            "src": "154:131:0",
+            "src": "152:131:0",
             "visibility": "public"
           },
           {
@@ -379,7 +379,7 @@
             "name": "invoices",
             "nodeType": "VariableDeclaration",
             "scope": 144,
-            "src": "291:39:0",
+            "src": "289:39:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -392,14 +392,14 @@
                 "id": 20,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
-                "src": "300:7:0",
+                "src": "298:7:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bytes32",
                   "typeString": "bytes32"
                 }
               },
               "nodeType": "Mapping",
-              "src": "291:30:0",
+              "src": "289:30:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                 "typeString": "mapping(bytes32 => struct FakBlock.FakRecord)"
@@ -410,7 +410,7 @@
                 "name": "FakRecord",
                 "nodeType": "UserDefinedTypeName",
                 "referencedDeclaration": 19,
-                "src": "311:9:0",
+                "src": "309:9:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_struct$_FakRecord_$19_storage_ptr",
                   "typeString": "struct FakBlock.FakRecord"
@@ -426,7 +426,7 @@
             "name": "owners",
             "nodeType": "VariableDeclaration",
             "scope": 144,
-            "src": "336:37:0",
+            "src": "334:37:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -439,14 +439,14 @@
                 "id": 24,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "345:7:0",
+                "src": "343:7:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "336:30:0",
+              "src": "334:30:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_bytes32_$dyn_storage_$",
                 "typeString": "mapping(address => bytes32[])"
@@ -456,7 +456,7 @@
                   "id": 25,
                   "name": "bytes32",
                   "nodeType": "ElementaryTypeName",
-                  "src": "356:7:0",
+                  "src": "354:7:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes32",
                     "typeString": "bytes32"
@@ -465,7 +465,7 @@
                 "id": 26,
                 "length": null,
                 "nodeType": "ArrayTypeName",
-                "src": "356:9:0",
+                "src": "354:9:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
                   "typeString": "bytes32[]"
@@ -479,7 +479,7 @@
             "body": {
               "id": 40,
               "nodeType": "Block",
-              "src": "446:47:0",
+              "src": "444:47:0",
               "statements": [
                 {
                   "expression": {
@@ -493,7 +493,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 23,
-                        "src": "463:8:0",
+                        "src": "461:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                           "typeString": "mapping(bytes32 => struct FakBlock.FakRecord storage ref)"
@@ -507,7 +507,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 30,
-                        "src": "472:7:0",
+                        "src": "470:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -518,7 +518,7 @@
                       "isPure": false,
                       "lValueRequested": false,
                       "nodeType": "IndexAccess",
-                      "src": "463:17:0",
+                      "src": "461:17:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_FakRecord_$19_storage",
                         "typeString": "struct FakBlock.FakRecord storage ref"
@@ -532,7 +532,7 @@
                     "memberName": "state",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": 16,
-                    "src": "463:23:0",
+                    "src": "461:23:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_FakState_$12",
                       "typeString": "enum FakBlock.FakState"
@@ -541,7 +541,7 @@
                   "functionReturnParameters": 34,
                   "id": 39,
                   "nodeType": "Return",
-                  "src": "456:30:0"
+                  "src": "454:30:0"
                 }
               ]
             },
@@ -563,7 +563,7 @@
                   "name": "fakHash",
                   "nodeType": "VariableDeclaration",
                   "scope": 41,
-                  "src": "398:15:0",
+                  "src": "396:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -574,7 +574,7 @@
                     "id": 29,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "398:7:0",
+                    "src": "396:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -584,7 +584,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "397:17:0"
+              "src": "395:17:0"
             },
             "payable": false,
             "returnParameters": {
@@ -597,7 +597,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 41,
-                  "src": "436:8:0",
+                  "src": "434:8:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -610,7 +610,7 @@
                     "name": "FakState",
                     "nodeType": "UserDefinedTypeName",
                     "referencedDeclaration": 12,
-                    "src": "436:8:0",
+                    "src": "434:8:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_FakState_$12",
                       "typeString": "enum FakBlock.FakState"
@@ -620,10 +620,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "435:10:0"
+              "src": "433:10:0"
             },
             "scope": 144,
-            "src": "380:113:0",
+            "src": "378:113:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -632,7 +632,7 @@
             "body": {
               "id": 53,
               "nodeType": "Block",
-              "src": "564:47:0",
+              "src": "562:47:0",
               "statements": [
                 {
                   "expression": {
@@ -646,7 +646,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 23,
-                        "src": "581:8:0",
+                        "src": "579:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                           "typeString": "mapping(bytes32 => struct FakBlock.FakRecord storage ref)"
@@ -660,7 +660,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 43,
-                        "src": "590:7:0",
+                        "src": "588:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -671,7 +671,7 @@
                       "isPure": false,
                       "lValueRequested": false,
                       "nodeType": "IndexAccess",
-                      "src": "581:17:0",
+                      "src": "579:17:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_FakRecord_$19_storage",
                         "typeString": "struct FakBlock.FakRecord storage ref"
@@ -685,7 +685,7 @@
                     "memberName": "owner",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": 14,
-                    "src": "581:23:0",
+                    "src": "579:23:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -694,7 +694,7 @@
                   "functionReturnParameters": 47,
                   "id": 52,
                   "nodeType": "Return",
-                  "src": "574:30:0"
+                  "src": "572:30:0"
                 }
               ]
             },
@@ -716,7 +716,7 @@
                   "name": "fakHash",
                   "nodeType": "VariableDeclaration",
                   "scope": 54,
-                  "src": "517:15:0",
+                  "src": "515:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -727,7 +727,7 @@
                     "id": 42,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "517:7:0",
+                    "src": "515:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -737,7 +737,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "516:17:0"
+              "src": "514:17:0"
             },
             "payable": false,
             "returnParameters": {
@@ -750,7 +750,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 54,
-                  "src": "555:7:0",
+                  "src": "553:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -761,7 +761,7 @@
                     "id": 45,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "555:7:0",
+                    "src": "553:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -771,10 +771,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "554:9:0"
+              "src": "552:9:0"
             },
             "scope": 144,
-            "src": "499:112:0",
+            "src": "497:112:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -783,7 +783,7 @@
             "body": {
               "id": 66,
               "nodeType": "Block",
-              "src": "685:51:0",
+              "src": "683:51:0",
               "statements": [
                 {
                   "expression": {
@@ -797,7 +797,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 23,
-                        "src": "702:8:0",
+                        "src": "700:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                           "typeString": "mapping(bytes32 => struct FakBlock.FakRecord storage ref)"
@@ -811,7 +811,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 56,
-                        "src": "711:7:0",
+                        "src": "709:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -822,7 +822,7 @@
                       "isPure": false,
                       "lValueRequested": false,
                       "nodeType": "IndexAccess",
-                      "src": "702:17:0",
+                      "src": "700:17:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_FakRecord_$19_storage",
                         "typeString": "struct FakBlock.FakRecord storage ref"
@@ -836,7 +836,7 @@
                     "memberName": "ipfs_hash",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": 18,
-                    "src": "702:27:0",
+                    "src": "700:27:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -845,7 +845,7 @@
                   "functionReturnParameters": 60,
                   "id": 65,
                   "nodeType": "Return",
-                  "src": "695:34:0"
+                  "src": "693:34:0"
                 }
               ]
             },
@@ -867,7 +867,7 @@
                   "name": "fakHash",
                   "nodeType": "VariableDeclaration",
                   "scope": 67,
-                  "src": "638:15:0",
+                  "src": "636:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -878,7 +878,7 @@
                     "id": 55,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "638:7:0",
+                    "src": "636:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -888,7 +888,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "637:17:0"
+              "src": "635:17:0"
             },
             "payable": false,
             "returnParameters": {
@@ -901,7 +901,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 67,
-                  "src": "676:7:0",
+                  "src": "674:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -912,7 +912,7 @@
                     "id": 58,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "676:7:0",
+                    "src": "674:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -922,10 +922,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "675:9:0"
+              "src": "673:9:0"
             },
             "scope": 144,
-            "src": "617:119:0",
+            "src": "615:119:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -934,7 +934,7 @@
             "body": {
               "id": 79,
               "nodeType": "Block",
-              "src": "812:37:0",
+              "src": "810:37:0",
               "statements": [
                 {
                   "expression": {
@@ -946,7 +946,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 28,
-                      "src": "829:6:0",
+                      "src": "827:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_bytes32_$dyn_storage_$",
                         "typeString": "mapping(address => bytes32[] storage ref)"
@@ -960,7 +960,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 69,
-                      "src": "836:5:0",
+                      "src": "834:5:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -971,7 +971,7 @@
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "IndexAccess",
-                    "src": "829:13:0",
+                    "src": "827:13:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_bytes32_$dyn_storage",
                       "typeString": "bytes32[] storage ref"
@@ -980,7 +980,7 @@
                   "functionReturnParameters": 74,
                   "id": 78,
                   "nodeType": "Return",
-                  "src": "822:20:0"
+                  "src": "820:20:0"
                 }
               ]
             },
@@ -1002,7 +1002,7 @@
                   "name": "owner",
                   "nodeType": "VariableDeclaration",
                   "scope": 80,
-                  "src": "765:13:0",
+                  "src": "763:13:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1013,7 +1013,7 @@
                     "id": 68,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "765:7:0",
+                    "src": "763:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -1023,7 +1023,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "764:15:0"
+              "src": "762:15:0"
             },
             "payable": false,
             "returnParameters": {
@@ -1036,7 +1036,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 80,
-                  "src": "801:9:0",
+                  "src": "799:9:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1048,7 +1048,7 @@
                       "id": 71,
                       "name": "bytes32",
                       "nodeType": "ElementaryTypeName",
-                      "src": "801:7:0",
+                      "src": "799:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -1057,7 +1057,7 @@
                     "id": 72,
                     "length": null,
                     "nodeType": "ArrayTypeName",
-                    "src": "801:9:0",
+                    "src": "799:9:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
                       "typeString": "bytes32[]"
@@ -1067,10 +1067,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "800:11:0"
+              "src": "798:11:0"
             },
             "scope": 144,
-            "src": "742:107:0",
+            "src": "740:107:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -1079,7 +1079,7 @@
             "body": {
               "id": 142,
               "nodeType": "Block",
-              "src": "932:340:0",
+              "src": "930:340:0",
               "statements": [
                 {
                   "expression": {
@@ -1107,7 +1107,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 23,
-                              "src": "950:8:0",
+                              "src": "948:8:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                                 "typeString": "mapping(bytes32 => struct FakBlock.FakRecord storage ref)"
@@ -1121,7 +1121,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 82,
-                              "src": "959:7:0",
+                              "src": "957:7:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes32",
                                 "typeString": "bytes32"
@@ -1132,7 +1132,7 @@
                             "isPure": false,
                             "lValueRequested": false,
                             "nodeType": "IndexAccess",
-                            "src": "950:17:0",
+                            "src": "948:17:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_FakRecord_$19_storage",
                               "typeString": "struct FakBlock.FakRecord storage ref"
@@ -1146,7 +1146,7 @@
                           "memberName": "owner",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": 14,
-                          "src": "950:23:0",
+                          "src": "948:23:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -1167,7 +1167,7 @@
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "985:1:0",
+                              "src": "983:1:0",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_0_by_1",
@@ -1189,7 +1189,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "977:7:0",
+                            "src": "975:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -1204,13 +1204,13 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "977:10:0",
+                          "src": "975:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           }
                         },
-                        "src": "950:37:0",
+                        "src": "948:37:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1226,7 +1226,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "989:11:0",
+                        "src": "987:11:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_3f0e62ffe7ef84fede8d444113e13150c7b7806a9a904e4f52872fe4d4efd8dc",
@@ -1254,7 +1254,7 @@
                         163
                       ],
                       "referencedDeclaration": 163,
-                      "src": "942:7:0",
+                      "src": "940:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
@@ -1268,7 +1268,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "942:59:0",
+                    "src": "940:59:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1276,7 +1276,7 @@
                   },
                   "id": 100,
                   "nodeType": "ExpressionStatement",
-                  "src": "942:59:0"
+                  "src": "940:59:0"
                 },
                 {
                   "expression": {
@@ -1297,7 +1297,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 23,
-                          "src": "1011:8:0",
+                          "src": "1009:8:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                             "typeString": "mapping(bytes32 => struct FakBlock.FakRecord storage ref)"
@@ -1311,7 +1311,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 82,
-                          "src": "1020:7:0",
+                          "src": "1018:7:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
                             "typeString": "bytes32"
@@ -1322,7 +1322,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1011:17:0",
+                        "src": "1009:17:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_FakRecord_$19_storage",
                           "typeString": "struct FakBlock.FakRecord storage ref"
@@ -1336,7 +1336,7 @@
                       "memberName": "owner",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 14,
-                      "src": "1011:23:0",
+                      "src": "1009:23:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -1353,7 +1353,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 159,
-                        "src": "1037:3:0",
+                        "src": "1035:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
@@ -1367,13 +1367,13 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1037:10:0",
+                      "src": "1035:10:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "1011:36:0",
+                    "src": "1009:36:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -1381,7 +1381,7 @@
                   },
                   "id": 108,
                   "nodeType": "ExpressionStatement",
-                  "src": "1011:36:0"
+                  "src": "1009:36:0"
                 },
                 {
                   "expression": {
@@ -1402,7 +1402,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 23,
-                          "src": "1057:8:0",
+                          "src": "1055:8:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                             "typeString": "mapping(bytes32 => struct FakBlock.FakRecord storage ref)"
@@ -1416,7 +1416,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 82,
-                          "src": "1066:7:0",
+                          "src": "1064:7:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
                             "typeString": "bytes32"
@@ -1427,7 +1427,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1057:17:0",
+                        "src": "1055:17:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_FakRecord_$19_storage",
                           "typeString": "struct FakBlock.FakRecord storage ref"
@@ -1441,7 +1441,7 @@
                       "memberName": "ipfs_hash",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 18,
-                      "src": "1057:27:0",
+                      "src": "1055:27:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -1456,13 +1456,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 84,
-                      "src": "1087:9:0",
+                      "src": "1085:9:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
                       }
                     },
-                    "src": "1057:39:0",
+                    "src": "1055:39:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1470,7 +1470,7 @@
                   },
                   "id": 115,
                   "nodeType": "ExpressionStatement",
-                  "src": "1057:39:0"
+                  "src": "1055:39:0"
                 },
                 {
                   "expression": {
@@ -1491,7 +1491,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 23,
-                          "src": "1106:8:0",
+                          "src": "1104:8:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                             "typeString": "mapping(bytes32 => struct FakBlock.FakRecord storage ref)"
@@ -1505,7 +1505,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 82,
-                          "src": "1115:7:0",
+                          "src": "1113:7:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
                             "typeString": "bytes32"
@@ -1516,7 +1516,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1106:17:0",
+                        "src": "1104:17:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_FakRecord_$19_storage",
                           "typeString": "struct FakBlock.FakRecord storage ref"
@@ -1530,7 +1530,7 @@
                       "memberName": "state",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 16,
-                      "src": "1106:23:0",
+                      "src": "1104:23:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_FakState_$12",
                         "typeString": "enum FakBlock.FakState"
@@ -1547,7 +1547,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 12,
-                        "src": "1132:8:0",
+                        "src": "1130:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_enum$_FakState_$12_$",
                           "typeString": "type(enum FakBlock.FakState)"
@@ -1561,13 +1561,13 @@
                       "memberName": "Sold",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1132:13:0",
+                      "src": "1130:13:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_FakState_$12",
                         "typeString": "enum FakBlock.FakState"
                       }
                     },
-                    "src": "1106:39:0",
+                    "src": "1104:39:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_FakState_$12",
                       "typeString": "enum FakBlock.FakState"
@@ -1575,7 +1575,7 @@
                   },
                   "id": 123,
                   "nodeType": "ExpressionStatement",
-                  "src": "1106:39:0"
+                  "src": "1104:39:0"
                 },
                 {
                   "expression": {
@@ -1588,7 +1588,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 82,
-                        "src": "1179:7:0",
+                        "src": "1177:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -1611,7 +1611,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 28,
-                          "src": "1155:6:0",
+                          "src": "1153:6:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_bytes32_$dyn_storage_$",
                             "typeString": "mapping(address => bytes32[] storage ref)"
@@ -1627,7 +1627,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 159,
-                            "src": "1162:3:0",
+                            "src": "1160:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
@@ -1641,7 +1641,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "1162:10:0",
+                          "src": "1160:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -1652,7 +1652,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1155:18:0",
+                        "src": "1153:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_bytes32_$dyn_storage",
                           "typeString": "bytes32[] storage ref"
@@ -1666,7 +1666,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1155:23:0",
+                      "src": "1153:23:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_bytes32_$returns$_t_uint256_$",
                         "typeString": "function (bytes32) returns (uint256)"
@@ -1680,7 +1680,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1155:32:0",
+                    "src": "1153:32:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1688,7 +1688,7 @@
                   },
                   "id": 131,
                   "nodeType": "ExpressionStatement",
-                  "src": "1155:32:0"
+                  "src": "1153:32:0"
                 },
                 {
                   "eventCall": {
@@ -1703,7 +1703,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 159,
-                          "src": "1209:3:0",
+                          "src": "1207:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -1717,7 +1717,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1209:10:0",
+                        "src": "1207:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1732,7 +1732,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 12,
-                          "src": "1221:8:0",
+                          "src": "1219:8:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_enum$_FakState_$12_$",
                             "typeString": "type(enum FakBlock.FakState)"
@@ -1746,7 +1746,7 @@
                         "memberName": "Sold",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1221:13:0",
+                        "src": "1219:13:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_FakState_$12",
                           "typeString": "enum FakBlock.FakState"
@@ -1759,7 +1759,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 82,
-                        "src": "1236:7:0",
+                        "src": "1234:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -1786,7 +1786,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 9,
-                      "src": "1202:6:0",
+                      "src": "1200:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_enum$_FakState_$12_$_t_bytes32_$returns$__$",
                         "typeString": "function (address,enum FakBlock.FakState,bytes32)"
@@ -1800,7 +1800,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1202:42:0",
+                    "src": "1200:42:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1808,7 +1808,7 @@
                   },
                   "id": 139,
                   "nodeType": "EmitStatement",
-                  "src": "1197:47:0"
+                  "src": "1195:47:0"
                 },
                 {
                   "expression": {
@@ -1821,7 +1821,7 @@
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "1261:4:0",
+                    "src": "1259:4:0",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -1832,7 +1832,7 @@
                   "functionReturnParameters": 88,
                   "id": 141,
                   "nodeType": "Return",
-                  "src": "1254:11:0"
+                  "src": "1252:11:0"
                 }
               ]
             },
@@ -1854,7 +1854,7 @@
                   "name": "fakHash",
                   "nodeType": "VariableDeclaration",
                   "scope": 143,
-                  "src": "875:15:0",
+                  "src": "873:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1865,7 +1865,7 @@
                     "id": 81,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "875:7:0",
+                    "src": "873:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1880,7 +1880,7 @@
                   "name": "ipfs_hash",
                   "nodeType": "VariableDeclaration",
                   "scope": 143,
-                  "src": "892:17:0",
+                  "src": "890:17:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1891,7 +1891,7 @@
                     "id": 83,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "892:7:0",
+                    "src": "890:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -1901,7 +1901,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "874:36:0"
+              "src": "872:36:0"
             },
             "payable": false,
             "returnParameters": {
@@ -1914,7 +1914,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 143,
-                  "src": "926:4:0",
+                  "src": "924:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1925,7 +1925,7 @@
                     "id": 86,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "926:4:0",
+                    "src": "924:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1935,20 +1935,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "925:6:0"
+              "src": "923:6:0"
             },
             "scope": 144,
-            "src": "855:417:0",
+            "src": "853:417:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 145,
-        "src": "27:1248:0"
+        "src": "27:1246:0"
       }
     ],
-    "src": "0:1276:0"
+    "src": "0:1274:0"
   },
   "legacyAST": {
     "absolutePath": "/home/msieminski/workspace/trufle-test/ngTruffle/contracts/FakBlock.sol",
@@ -2054,10 +2054,10 @@
                   "constant": false,
                   "id": 7,
                   "indexed": false,
-                  "name": "ipfs_hash",
+                  "name": "fakHash",
                   "nodeType": "VariableDeclaration",
                   "scope": 9,
-                  "src": "96:17:0",
+                  "src": "96:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2078,9 +2078,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "64:50:0"
+              "src": "64:48:0"
             },
-            "src": "52:63:0"
+            "src": "52:61:0"
           },
           {
             "canonicalName": "FakBlock.FakState",
@@ -2090,18 +2090,18 @@
                 "id": 10,
                 "name": "New",
                 "nodeType": "EnumValue",
-                "src": "137:3:0"
+                "src": "135:3:0"
               },
               {
                 "id": 11,
                 "name": "Sold",
                 "nodeType": "EnumValue",
-                "src": "142:4:0"
+                "src": "140:4:0"
               }
             ],
             "name": "FakState",
             "nodeType": "EnumDefinition",
-            "src": "121:27:0"
+            "src": "119:27:0"
           },
           {
             "canonicalName": "FakBlock.FakRecord",
@@ -2113,7 +2113,7 @@
                 "name": "owner",
                 "nodeType": "VariableDeclaration",
                 "scope": 19,
-                "src": "181:13:0",
+                "src": "179:13:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -2124,7 +2124,7 @@
                   "id": 13,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "181:7:0",
+                  "src": "179:7:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address",
                     "typeString": "address"
@@ -2139,7 +2139,7 @@
                 "name": "state",
                 "nodeType": "VariableDeclaration",
                 "scope": 19,
-                "src": "204:14:0",
+                "src": "202:14:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -2152,7 +2152,7 @@
                   "name": "FakState",
                   "nodeType": "UserDefinedTypeName",
                   "referencedDeclaration": 12,
-                  "src": "204:8:0",
+                  "src": "202:8:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_enum$_FakState_$12",
                     "typeString": "enum FakBlock.FakState"
@@ -2167,7 +2167,7 @@
                 "name": "ipfs_hash",
                 "nodeType": "VariableDeclaration",
                 "scope": 19,
-                "src": "228:17:0",
+                "src": "226:17:0",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -2178,7 +2178,7 @@
                   "id": 17,
                   "name": "bytes32",
                   "nodeType": "ElementaryTypeName",
-                  "src": "228:7:0",
+                  "src": "226:7:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes32",
                     "typeString": "bytes32"
@@ -2191,7 +2191,7 @@
             "name": "FakRecord",
             "nodeType": "StructDefinition",
             "scope": 144,
-            "src": "154:131:0",
+            "src": "152:131:0",
             "visibility": "public"
           },
           {
@@ -2200,7 +2200,7 @@
             "name": "invoices",
             "nodeType": "VariableDeclaration",
             "scope": 144,
-            "src": "291:39:0",
+            "src": "289:39:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -2213,14 +2213,14 @@
                 "id": 20,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
-                "src": "300:7:0",
+                "src": "298:7:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bytes32",
                   "typeString": "bytes32"
                 }
               },
               "nodeType": "Mapping",
-              "src": "291:30:0",
+              "src": "289:30:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                 "typeString": "mapping(bytes32 => struct FakBlock.FakRecord)"
@@ -2231,7 +2231,7 @@
                 "name": "FakRecord",
                 "nodeType": "UserDefinedTypeName",
                 "referencedDeclaration": 19,
-                "src": "311:9:0",
+                "src": "309:9:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_struct$_FakRecord_$19_storage_ptr",
                   "typeString": "struct FakBlock.FakRecord"
@@ -2247,7 +2247,7 @@
             "name": "owners",
             "nodeType": "VariableDeclaration",
             "scope": 144,
-            "src": "336:37:0",
+            "src": "334:37:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -2260,14 +2260,14 @@
                 "id": 24,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "345:7:0",
+                "src": "343:7:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
               "nodeType": "Mapping",
-              "src": "336:30:0",
+              "src": "334:30:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_bytes32_$dyn_storage_$",
                 "typeString": "mapping(address => bytes32[])"
@@ -2277,7 +2277,7 @@
                   "id": 25,
                   "name": "bytes32",
                   "nodeType": "ElementaryTypeName",
-                  "src": "356:7:0",
+                  "src": "354:7:0",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes32",
                     "typeString": "bytes32"
@@ -2286,7 +2286,7 @@
                 "id": 26,
                 "length": null,
                 "nodeType": "ArrayTypeName",
-                "src": "356:9:0",
+                "src": "354:9:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
                   "typeString": "bytes32[]"
@@ -2300,7 +2300,7 @@
             "body": {
               "id": 40,
               "nodeType": "Block",
-              "src": "446:47:0",
+              "src": "444:47:0",
               "statements": [
                 {
                   "expression": {
@@ -2314,7 +2314,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 23,
-                        "src": "463:8:0",
+                        "src": "461:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                           "typeString": "mapping(bytes32 => struct FakBlock.FakRecord storage ref)"
@@ -2328,7 +2328,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 30,
-                        "src": "472:7:0",
+                        "src": "470:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -2339,7 +2339,7 @@
                       "isPure": false,
                       "lValueRequested": false,
                       "nodeType": "IndexAccess",
-                      "src": "463:17:0",
+                      "src": "461:17:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_FakRecord_$19_storage",
                         "typeString": "struct FakBlock.FakRecord storage ref"
@@ -2353,7 +2353,7 @@
                     "memberName": "state",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": 16,
-                    "src": "463:23:0",
+                    "src": "461:23:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_FakState_$12",
                       "typeString": "enum FakBlock.FakState"
@@ -2362,7 +2362,7 @@
                   "functionReturnParameters": 34,
                   "id": 39,
                   "nodeType": "Return",
-                  "src": "456:30:0"
+                  "src": "454:30:0"
                 }
               ]
             },
@@ -2384,7 +2384,7 @@
                   "name": "fakHash",
                   "nodeType": "VariableDeclaration",
                   "scope": 41,
-                  "src": "398:15:0",
+                  "src": "396:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2395,7 +2395,7 @@
                     "id": 29,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "398:7:0",
+                    "src": "396:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -2405,7 +2405,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "397:17:0"
+              "src": "395:17:0"
             },
             "payable": false,
             "returnParameters": {
@@ -2418,7 +2418,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 41,
-                  "src": "436:8:0",
+                  "src": "434:8:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2431,7 +2431,7 @@
                     "name": "FakState",
                     "nodeType": "UserDefinedTypeName",
                     "referencedDeclaration": 12,
-                    "src": "436:8:0",
+                    "src": "434:8:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_FakState_$12",
                       "typeString": "enum FakBlock.FakState"
@@ -2441,10 +2441,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "435:10:0"
+              "src": "433:10:0"
             },
             "scope": 144,
-            "src": "380:113:0",
+            "src": "378:113:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -2453,7 +2453,7 @@
             "body": {
               "id": 53,
               "nodeType": "Block",
-              "src": "564:47:0",
+              "src": "562:47:0",
               "statements": [
                 {
                   "expression": {
@@ -2467,7 +2467,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 23,
-                        "src": "581:8:0",
+                        "src": "579:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                           "typeString": "mapping(bytes32 => struct FakBlock.FakRecord storage ref)"
@@ -2481,7 +2481,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 43,
-                        "src": "590:7:0",
+                        "src": "588:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -2492,7 +2492,7 @@
                       "isPure": false,
                       "lValueRequested": false,
                       "nodeType": "IndexAccess",
-                      "src": "581:17:0",
+                      "src": "579:17:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_FakRecord_$19_storage",
                         "typeString": "struct FakBlock.FakRecord storage ref"
@@ -2506,7 +2506,7 @@
                     "memberName": "owner",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": 14,
-                    "src": "581:23:0",
+                    "src": "579:23:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -2515,7 +2515,7 @@
                   "functionReturnParameters": 47,
                   "id": 52,
                   "nodeType": "Return",
-                  "src": "574:30:0"
+                  "src": "572:30:0"
                 }
               ]
             },
@@ -2537,7 +2537,7 @@
                   "name": "fakHash",
                   "nodeType": "VariableDeclaration",
                   "scope": 54,
-                  "src": "517:15:0",
+                  "src": "515:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2548,7 +2548,7 @@
                     "id": 42,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "517:7:0",
+                    "src": "515:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -2558,7 +2558,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "516:17:0"
+              "src": "514:17:0"
             },
             "payable": false,
             "returnParameters": {
@@ -2571,7 +2571,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 54,
-                  "src": "555:7:0",
+                  "src": "553:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2582,7 +2582,7 @@
                     "id": 45,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "555:7:0",
+                    "src": "553:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -2592,10 +2592,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "554:9:0"
+              "src": "552:9:0"
             },
             "scope": 144,
-            "src": "499:112:0",
+            "src": "497:112:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -2604,7 +2604,7 @@
             "body": {
               "id": 66,
               "nodeType": "Block",
-              "src": "685:51:0",
+              "src": "683:51:0",
               "statements": [
                 {
                   "expression": {
@@ -2618,7 +2618,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 23,
-                        "src": "702:8:0",
+                        "src": "700:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                           "typeString": "mapping(bytes32 => struct FakBlock.FakRecord storage ref)"
@@ -2632,7 +2632,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 56,
-                        "src": "711:7:0",
+                        "src": "709:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -2643,7 +2643,7 @@
                       "isPure": false,
                       "lValueRequested": false,
                       "nodeType": "IndexAccess",
-                      "src": "702:17:0",
+                      "src": "700:17:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_FakRecord_$19_storage",
                         "typeString": "struct FakBlock.FakRecord storage ref"
@@ -2657,7 +2657,7 @@
                     "memberName": "ipfs_hash",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": 18,
-                    "src": "702:27:0",
+                    "src": "700:27:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -2666,7 +2666,7 @@
                   "functionReturnParameters": 60,
                   "id": 65,
                   "nodeType": "Return",
-                  "src": "695:34:0"
+                  "src": "693:34:0"
                 }
               ]
             },
@@ -2688,7 +2688,7 @@
                   "name": "fakHash",
                   "nodeType": "VariableDeclaration",
                   "scope": 67,
-                  "src": "638:15:0",
+                  "src": "636:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2699,7 +2699,7 @@
                     "id": 55,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "638:7:0",
+                    "src": "636:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -2709,7 +2709,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "637:17:0"
+              "src": "635:17:0"
             },
             "payable": false,
             "returnParameters": {
@@ -2722,7 +2722,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 67,
-                  "src": "676:7:0",
+                  "src": "674:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2733,7 +2733,7 @@
                     "id": 58,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "676:7:0",
+                    "src": "674:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -2743,10 +2743,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "675:9:0"
+              "src": "673:9:0"
             },
             "scope": 144,
-            "src": "617:119:0",
+            "src": "615:119:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -2755,7 +2755,7 @@
             "body": {
               "id": 79,
               "nodeType": "Block",
-              "src": "812:37:0",
+              "src": "810:37:0",
               "statements": [
                 {
                   "expression": {
@@ -2767,7 +2767,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 28,
-                      "src": "829:6:0",
+                      "src": "827:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_bytes32_$dyn_storage_$",
                         "typeString": "mapping(address => bytes32[] storage ref)"
@@ -2781,7 +2781,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 69,
-                      "src": "836:5:0",
+                      "src": "834:5:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -2792,7 +2792,7 @@
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "IndexAccess",
-                    "src": "829:13:0",
+                    "src": "827:13:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_bytes32_$dyn_storage",
                       "typeString": "bytes32[] storage ref"
@@ -2801,7 +2801,7 @@
                   "functionReturnParameters": 74,
                   "id": 78,
                   "nodeType": "Return",
-                  "src": "822:20:0"
+                  "src": "820:20:0"
                 }
               ]
             },
@@ -2823,7 +2823,7 @@
                   "name": "owner",
                   "nodeType": "VariableDeclaration",
                   "scope": 80,
-                  "src": "765:13:0",
+                  "src": "763:13:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2834,7 +2834,7 @@
                     "id": 68,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "765:7:0",
+                    "src": "763:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -2844,7 +2844,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "764:15:0"
+              "src": "762:15:0"
             },
             "payable": false,
             "returnParameters": {
@@ -2857,7 +2857,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 80,
-                  "src": "801:9:0",
+                  "src": "799:9:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2869,7 +2869,7 @@
                       "id": 71,
                       "name": "bytes32",
                       "nodeType": "ElementaryTypeName",
-                      "src": "801:7:0",
+                      "src": "799:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -2878,7 +2878,7 @@
                     "id": 72,
                     "length": null,
                     "nodeType": "ArrayTypeName",
-                    "src": "801:9:0",
+                    "src": "799:9:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
                       "typeString": "bytes32[]"
@@ -2888,10 +2888,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "800:11:0"
+              "src": "798:11:0"
             },
             "scope": 144,
-            "src": "742:107:0",
+            "src": "740:107:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
@@ -2900,7 +2900,7 @@
             "body": {
               "id": 142,
               "nodeType": "Block",
-              "src": "932:340:0",
+              "src": "930:340:0",
               "statements": [
                 {
                   "expression": {
@@ -2928,7 +2928,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 23,
-                              "src": "950:8:0",
+                              "src": "948:8:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                                 "typeString": "mapping(bytes32 => struct FakBlock.FakRecord storage ref)"
@@ -2942,7 +2942,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 82,
-                              "src": "959:7:0",
+                              "src": "957:7:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes32",
                                 "typeString": "bytes32"
@@ -2953,7 +2953,7 @@
                             "isPure": false,
                             "lValueRequested": false,
                             "nodeType": "IndexAccess",
-                            "src": "950:17:0",
+                            "src": "948:17:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_FakRecord_$19_storage",
                               "typeString": "struct FakBlock.FakRecord storage ref"
@@ -2967,7 +2967,7 @@
                           "memberName": "owner",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": 14,
-                          "src": "950:23:0",
+                          "src": "948:23:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -2988,7 +2988,7 @@
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "985:1:0",
+                              "src": "983:1:0",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_0_by_1",
@@ -3010,7 +3010,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "977:7:0",
+                            "src": "975:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -3025,13 +3025,13 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "977:10:0",
+                          "src": "975:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           }
                         },
-                        "src": "950:37:0",
+                        "src": "948:37:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -3047,7 +3047,7 @@
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "989:11:0",
+                        "src": "987:11:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_3f0e62ffe7ef84fede8d444113e13150c7b7806a9a904e4f52872fe4d4efd8dc",
@@ -3075,7 +3075,7 @@
                         163
                       ],
                       "referencedDeclaration": 163,
-                      "src": "942:7:0",
+                      "src": "940:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
@@ -3089,7 +3089,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "942:59:0",
+                    "src": "940:59:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -3097,7 +3097,7 @@
                   },
                   "id": 100,
                   "nodeType": "ExpressionStatement",
-                  "src": "942:59:0"
+                  "src": "940:59:0"
                 },
                 {
                   "expression": {
@@ -3118,7 +3118,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 23,
-                          "src": "1011:8:0",
+                          "src": "1009:8:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                             "typeString": "mapping(bytes32 => struct FakBlock.FakRecord storage ref)"
@@ -3132,7 +3132,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 82,
-                          "src": "1020:7:0",
+                          "src": "1018:7:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
                             "typeString": "bytes32"
@@ -3143,7 +3143,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1011:17:0",
+                        "src": "1009:17:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_FakRecord_$19_storage",
                           "typeString": "struct FakBlock.FakRecord storage ref"
@@ -3157,7 +3157,7 @@
                       "memberName": "owner",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 14,
-                      "src": "1011:23:0",
+                      "src": "1009:23:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
@@ -3174,7 +3174,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 159,
-                        "src": "1037:3:0",
+                        "src": "1035:3:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
                           "typeString": "msg"
@@ -3188,13 +3188,13 @@
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1037:10:0",
+                      "src": "1035:10:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "src": "1011:36:0",
+                    "src": "1009:36:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -3202,7 +3202,7 @@
                   },
                   "id": 108,
                   "nodeType": "ExpressionStatement",
-                  "src": "1011:36:0"
+                  "src": "1009:36:0"
                 },
                 {
                   "expression": {
@@ -3223,7 +3223,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 23,
-                          "src": "1057:8:0",
+                          "src": "1055:8:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                             "typeString": "mapping(bytes32 => struct FakBlock.FakRecord storage ref)"
@@ -3237,7 +3237,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 82,
-                          "src": "1066:7:0",
+                          "src": "1064:7:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
                             "typeString": "bytes32"
@@ -3248,7 +3248,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1057:17:0",
+                        "src": "1055:17:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_FakRecord_$19_storage",
                           "typeString": "struct FakBlock.FakRecord storage ref"
@@ -3262,7 +3262,7 @@
                       "memberName": "ipfs_hash",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 18,
-                      "src": "1057:27:0",
+                      "src": "1055:27:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
@@ -3277,13 +3277,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 84,
-                      "src": "1087:9:0",
+                      "src": "1085:9:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
                         "typeString": "bytes32"
                       }
                     },
-                    "src": "1057:39:0",
+                    "src": "1055:39:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -3291,7 +3291,7 @@
                   },
                   "id": 115,
                   "nodeType": "ExpressionStatement",
-                  "src": "1057:39:0"
+                  "src": "1055:39:0"
                 },
                 {
                   "expression": {
@@ -3312,7 +3312,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 23,
-                          "src": "1106:8:0",
+                          "src": "1104:8:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_FakRecord_$19_storage_$",
                             "typeString": "mapping(bytes32 => struct FakBlock.FakRecord storage ref)"
@@ -3326,7 +3326,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 82,
-                          "src": "1115:7:0",
+                          "src": "1113:7:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
                             "typeString": "bytes32"
@@ -3337,7 +3337,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1106:17:0",
+                        "src": "1104:17:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_FakRecord_$19_storage",
                           "typeString": "struct FakBlock.FakRecord storage ref"
@@ -3351,7 +3351,7 @@
                       "memberName": "state",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 16,
-                      "src": "1106:23:0",
+                      "src": "1104:23:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_FakState_$12",
                         "typeString": "enum FakBlock.FakState"
@@ -3368,7 +3368,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 12,
-                        "src": "1132:8:0",
+                        "src": "1130:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_enum$_FakState_$12_$",
                           "typeString": "type(enum FakBlock.FakState)"
@@ -3382,13 +3382,13 @@
                       "memberName": "Sold",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1132:13:0",
+                      "src": "1130:13:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_enum$_FakState_$12",
                         "typeString": "enum FakBlock.FakState"
                       }
                     },
-                    "src": "1106:39:0",
+                    "src": "1104:39:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_enum$_FakState_$12",
                       "typeString": "enum FakBlock.FakState"
@@ -3396,7 +3396,7 @@
                   },
                   "id": 123,
                   "nodeType": "ExpressionStatement",
-                  "src": "1106:39:0"
+                  "src": "1104:39:0"
                 },
                 {
                   "expression": {
@@ -3409,7 +3409,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 82,
-                        "src": "1179:7:0",
+                        "src": "1177:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -3432,7 +3432,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 28,
-                          "src": "1155:6:0",
+                          "src": "1153:6:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_bytes32_$dyn_storage_$",
                             "typeString": "mapping(address => bytes32[] storage ref)"
@@ -3448,7 +3448,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 159,
-                            "src": "1162:3:0",
+                            "src": "1160:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
@@ -3462,7 +3462,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "1162:10:0",
+                          "src": "1160:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -3473,7 +3473,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1155:18:0",
+                        "src": "1153:18:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_bytes32_$dyn_storage",
                           "typeString": "bytes32[] storage ref"
@@ -3487,7 +3487,7 @@
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "1155:23:0",
+                      "src": "1153:23:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_arraypush_nonpayable$_t_bytes32_$returns$_t_uint256_$",
                         "typeString": "function (bytes32) returns (uint256)"
@@ -3501,7 +3501,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1155:32:0",
+                    "src": "1153:32:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3509,7 +3509,7 @@
                   },
                   "id": 131,
                   "nodeType": "ExpressionStatement",
-                  "src": "1155:32:0"
+                  "src": "1153:32:0"
                 },
                 {
                   "eventCall": {
@@ -3524,7 +3524,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 159,
-                          "src": "1209:3:0",
+                          "src": "1207:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
@@ -3538,7 +3538,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1209:10:0",
+                        "src": "1207:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -3553,7 +3553,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 12,
-                          "src": "1221:8:0",
+                          "src": "1219:8:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_type$_t_enum$_FakState_$12_$",
                             "typeString": "type(enum FakBlock.FakState)"
@@ -3567,7 +3567,7 @@
                         "memberName": "Sold",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1221:13:0",
+                        "src": "1219:13:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_enum$_FakState_$12",
                           "typeString": "enum FakBlock.FakState"
@@ -3580,7 +3580,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 82,
-                        "src": "1236:7:0",
+                        "src": "1234:7:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -3607,7 +3607,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 9,
-                      "src": "1202:6:0",
+                      "src": "1200:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_enum$_FakState_$12_$_t_bytes32_$returns$__$",
                         "typeString": "function (address,enum FakBlock.FakState,bytes32)"
@@ -3621,7 +3621,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1202:42:0",
+                    "src": "1200:42:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -3629,7 +3629,7 @@
                   },
                   "id": 139,
                   "nodeType": "EmitStatement",
-                  "src": "1197:47:0"
+                  "src": "1195:47:0"
                 },
                 {
                   "expression": {
@@ -3642,7 +3642,7 @@
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "1261:4:0",
+                    "src": "1259:4:0",
                     "subdenomination": null,
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
@@ -3653,7 +3653,7 @@
                   "functionReturnParameters": 88,
                   "id": 141,
                   "nodeType": "Return",
-                  "src": "1254:11:0"
+                  "src": "1252:11:0"
                 }
               ]
             },
@@ -3675,7 +3675,7 @@
                   "name": "fakHash",
                   "nodeType": "VariableDeclaration",
                   "scope": 143,
-                  "src": "875:15:0",
+                  "src": "873:15:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3686,7 +3686,7 @@
                     "id": 81,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "875:7:0",
+                    "src": "873:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -3701,7 +3701,7 @@
                   "name": "ipfs_hash",
                   "nodeType": "VariableDeclaration",
                   "scope": 143,
-                  "src": "892:17:0",
+                  "src": "890:17:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3712,7 +3712,7 @@
                     "id": 83,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "892:7:0",
+                    "src": "890:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -3722,7 +3722,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "874:36:0"
+              "src": "872:36:0"
             },
             "payable": false,
             "returnParameters": {
@@ -3735,7 +3735,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 143,
-                  "src": "926:4:0",
+                  "src": "924:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3746,7 +3746,7 @@
                     "id": 86,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "926:4:0",
+                    "src": "924:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -3756,20 +3756,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "925:6:0"
+              "src": "923:6:0"
             },
             "scope": 144,
-            "src": "855:417:0",
+            "src": "853:417:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 145,
-        "src": "27:1248:0"
+        "src": "27:1246:0"
       }
     ],
-    "src": "0:1276:0"
+    "src": "0:1274:0"
   },
   "compiler": {
     "name": "solc",
@@ -3779,8 +3779,8 @@
     "4": {
       "events": {},
       "links": {},
-      "address": "0x91c79fa10d32eb550b97d25ce81877ce41ea57bf",
-      "transactionHash": "0x1b7b6700124de5dcad1052bcd6889b7f8a99458f8265e2711735ada7ecc54784"
+      "address": "0x76987ae5499c159396f723497cdb9ab6da9ecf22",
+      "transactionHash": "0xc5daa99d1cce67cf46eccbeee1bd39c971b26e63d1587b2bc060ce506cb23503"
     },
     "1535542762667": {
       "events": {},
@@ -3808,5 +3808,5 @@
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-09-28T13:16:17.081Z"
+  "updatedAt": "2018-09-28T16:48:47.957Z"
 }

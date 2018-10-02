@@ -56,9 +56,24 @@ export class FakAppComponent implements OnInit {
       const transaction = await deployedMetaCoin.getOwner(h);
       console.log([transaction]);
       if (this.web3Service.isAddress(transaction) && transaction !== "0x0000000000000000000000000000000000000000") {
-        const dialogRef = this.dialog.open(ConfirmationDialog, {data: { ok: true, text: `invoice(${h}) owned by: ${transaction} ${transaction == account? "(You)": ""}` }});
+        const dialogRef = this.dialog.open(ConfirmationDialog, {
+          width: '600px',
+          data: { 
+            ok: false,
+            title: 'Faktura istnieje już w systemie!',
+            subtitle: `Kod faktury odpowiadający podanym przez Ciebie danym: ${h}`,
+            text: `istnieje już w systemie. Taka faktura została już dodana przez użytkownika o adresie: ${transaction}`
+          }
+        });
       } else {
-        const dialogRef = this.dialog.open(ConfirmationDialog, {data: { ok: true , text: `no invoice (${h})`}});
+        const dialogRef = this.dialog.open(ConfirmationDialog, {
+          width: '600px',
+          data: { ok: true ,
+            title: 'Faktura nie istnieje w systemie!',
+            subtitle: `Kod faktury odpowiadający podanym przez Ciebie danym: ${h}`,
+            text:`nie istnieje jeszcze w systemie.`
+          }
+        });
       }
     } catch (e) {
       console.log(e);
@@ -84,23 +99,50 @@ export class FakAppComponent implements OnInit {
     this.loading = true;
     var h = this.web3Service.hash(fak.asString());
     console.log('Sending hash:' + h);
-    var encrypted = await this.encryptFak(fak);
     
-    var ipfsHash = await this.ipfsService.save(encrypted);
     
 
     try {
+      var encrypted = await this.encryptFak(fak);
+    
+      var ipfsHash = await this.ipfsService.save(encrypted);
+
       const deployedMetaCoin = await this.FakBlock.deployed();
 
       var transaction = await deployedMetaCoin.getOwner(h);
       if (this.web3Service.isAddress(transaction) && transaction !== "0x0000000000000000000000000000000000000000") {
-        const dialogRef = this.dialog.open(ConfirmationDialog, {data: { ok: false, text: `invoice(${h}) owned by: ${transaction}` }});
+        const dialogRef = this.dialog.open(ConfirmationDialog, {
+          width: '600px',
+          data: {
+            ok: false, 
+            title: 'Nie udało się dodać faktury!',
+            subtitle: `Kod faktury odpowiadający podanym przez Ciebie danym: ${h}`,
+            text:`istnieje już w systemie. Taka faktura została już dodana przez użytkownika o adresie:
+            ${transaction}`
+          }
+        });
       } else {
         transaction = await deployedMetaCoin.createFack(h, ipfsHash, {from: account, gas: 1000000});
         if (transaction) {
-          const dialogRef = this.dialog.open(ConfirmationDialog, {data: { ok: true, text: "success" }});
+          const dialogRef = this.dialog.open(ConfirmationDialog, {
+            width: '600px',
+            data: {
+              ok: true,
+              title: "Udało się dodać fakturę!",
+              subtitle: `Dodałeś do systemu:`,
+              fak: fak,
+              text: `W systemie będzie ona występowała jako kod: ${h}`
+            }
+          });
         } else {
-          const dialogRef = this.dialog.open(ConfirmationDialog, {data: { ok: false, text: "error" }});
+          const dialogRef = this.dialog.open(ConfirmationDialog, {
+            width: '600px',
+            data: {
+              ok: false, 
+              title: 'Nie udało się dodać faktury!',
+              subtitle: `Kod faktury odpowiadający podanym przez Ciebie danym: ${h}`
+            }
+          });
         }
       }
     } catch (e) {
@@ -114,10 +156,22 @@ export class FakAppComponent implements OnInit {
 
 @Component({
   selector: 'dialog-content-example-dialog',
-  template: `<h2 mat-dialog-title>{{data.ok?"OK":"ERROR"}}</h2>
-  <mat-dialog-content>{{data.text}}</mat-dialog-content>
+  styleUrls: ['./confirmation-dialog.component.css'],
+  template: `<h2 mat-dialog-title [ngClass]="{'error': data.ok == false}">{{data.title?data.title:"ERROR"}}</h2>
+  <mat-dialog-content>
+    <div fxLayout="column" >
+      <div class="subtitle">{{data.subtitle}}</div>
+      <div class="fak" *ngIf="data.fak" fxLayout="column">
+        <div>Faktura nr {{data.fak.invoiceNo}} z dnia {{data.fak.date|date:'d/M/yy'}}</div>
+        <div fxLayout="row"><div>NIP faktoranta:</div><div fxFlex></div><div>{{data.fak.issuerId}}</div></div>
+        <div fxLayout="row"><div>NIP płatnika:</div><div fxFlex></div><div>{{data.fak.payerId}}</div></div>
+        <div fxLayout="row"><div>Wartość brutto:</div><div fxFlex></div><div>{{data.fak.amount}}</div></div>
+      </div>
+      <div>{{data.text}}</div>
+    </div>
+  </mat-dialog-content>
   <mat-dialog-actions>
-    <button mat-button [mat-dialog-close]="true">OK</button>
+    <button mat-button mat-raised-button [mat-dialog-close]="true">OK</button>
   </mat-dialog-actions>`,
 })
 export class ConfirmationDialog {

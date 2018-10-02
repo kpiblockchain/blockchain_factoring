@@ -42,23 +42,27 @@ export class FakListComponent implements OnInit {
     let hashes = await deployedFakBlock.getFakByOwner(this.account);
     for(let i in hashes) {
       let hash = hashes[i];
-      let ipfsAdddr = await deployedFakBlock.getIpfsHash(hash);
-      await this.addToList(ipfsAdddr);
+      await this.addToList(deployedFakBlock, hash);
     }
 
     const events = deployedFakBlock.Create({});
     events.watch((err, result) => {
       console.log([result]);
-      if(result.args.owner == this.account && ! this.duplicates.hasOwnProperty(result.args.ipfs_hash)) {
-        this.addToList(result.args.ipfs_hash);
+      if(result.args.owner == this.account && ! this.duplicates.hasOwnProperty(result.args.fakHash)) {
+        this.addToList(deployedFakBlock, result.args.fakHash);
       }
     });
   }
 
-  async addToList(ipfsAdddr: string) {
-    let encEata = await this.ipfsService.load(ipfsAdddr);
-    let data = await this.decryptFak(encEata);
-    this.fakList.push(data);
+  async addToList(deployedFakBlock, hash: string) {
+    let ipfsAdddr = await deployedFakBlock.getIpfsHash(hash);
+    try {
+      let encEata = await this.ipfsService.load(ipfsAdddr);
+      let data = await this.decryptFak(encEata);
+      this.fakList.push(data);
+    } catch (e) {
+      console.log(["TODO show error",e]);
+    }
     this.duplicates[ipfsAdddr] = true;
   }
 

@@ -61,9 +61,13 @@ export class Web3Service {
         return;
       }
       this.web3.personal.sign(this.keySeed, this.web3.eth.accounts[0], "0xdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef", function(error, result) {
-        self.symKey = result.slice(2, 66);
-        console.log("symKey:" + self.symKey);
-        resolve(self.symKey);
+        if (error) {
+          reject(error);
+        } else {
+          self.symKey = result.slice(2, 66);
+          console.log("symKey:" + self.symKey);
+          resolve(self.symKey);
+        }
       });
     });
   }

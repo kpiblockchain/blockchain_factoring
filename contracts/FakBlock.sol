@@ -3,7 +3,7 @@ pragma solidity ^0.4.24;
 
 contract FakBlock {
 
-    event Create(address owner, FakState state, bytes32 ipfs_hash);
+    event Create(address owner, FakState state, bytes32 fakHash);
 
     enum FakState { New, Sold }
 
